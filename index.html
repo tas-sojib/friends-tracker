@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends Tracker</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Friends Tracker</h1>
+            <p>Keep track of your friends' contact information</p>
+        </header>
+        
+        <form class="form-container" id="friendForm">
+            <input type="text" id="friendNameInput" name="friendName" placeholder="Enter friend's name" required>
+            <input type="number" id="friendNumberInput" name="friendNumber" placeholder="Enter friend's number" required>
+            <button type="submit" id="addFriendButton">Add Friend</button>
+        </form>
+
+        <div class="friends-list">
+            <table id="friendsTable">
+                <caption>Friends List</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Number</th>
+                    </tr>
+                </thead>
+                <tbody id="friendsListInfo">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+ 
