@@ -17,7 +17,7 @@ body {
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     min-width: 600px;
-    min-height: 400px;
+    min-height: 300px;
 }
 
 .container {
