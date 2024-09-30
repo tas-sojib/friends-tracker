@@ -3,6 +3,7 @@ const friendForm = document.querySelector('#friendForm'); // Form element for ad
 const friendNameInput = document.querySelector('#friendNameInput'); // Input field for friend's name
 const friendNumberInput = document.querySelector('#friendNumberInput'); // Input field for friend's number
 const friendsListInfo = document.querySelector('#friendsListInfo'); // Table body element to display the list of friends
+const deleteBtn=document.getElementById('delete')
 
 // Retrieve stored friends data from local storage or initialize empty arrays if no data exists
 let friendNames = JSON.parse(localStorage.getItem('friendNames')) || [];
@@ -64,3 +65,8 @@ friendForm.addEventListener('submit', function(e) {
     friendForm.reset();
 });
 
+// Clear friendlist and update the dom
+deleteBtn.addEventListener('click',function(){
+   localStorage.clear()
+   friendsListInfo.innerHTML=''
+})
