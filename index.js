@@ -15,7 +15,7 @@ if (friendNames.length || friendNumbers.length) {
     for (let i = 0; i < friendNames.length; i++) {
         friendsTableHtml += `
         <tr>
-            <td>${friendNames[i]}</td>
+            <td>${i+1}.${friendNames[i]}</td>
             <td>${friendNumbers[i]}</td>
         </tr>
         `;
@@ -40,7 +40,7 @@ function addFriend(name, number) {
     // Append the new friend to the table
     friendsListInfo.innerHTML += `
     <tr>
-        <td>${name}</td>
+        <td>${friendNames.length}.${name}</td>
         <td>${number}</td>
     </tr>
     `;
