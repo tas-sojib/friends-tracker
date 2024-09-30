@@ -68,5 +68,7 @@ friendForm.addEventListener('submit', function(e) {
 // Clear friendlist and update the dom
 deleteBtn.addEventListener('click',function(){
    localStorage.clear()
+   friendNames=[]
+   friendNumbers=[]
    friendsListInfo.innerHTML=''
 })
